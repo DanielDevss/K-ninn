@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--SYLES-->
+  <link rel="stylesheet" href="../css/style.css">
+
+
+  <title>Hotel de Perros</title>
+</head>
+
+<div class="f-dosis">
+  <!-- - - - HEADER - - - - -->
+  <header>
+    <a href="/" class="d-flex justify-content-center w-100">
+        <img class="w-25" src="../img/LOGOTIPO_CON_BORDE.png" alt="logotipo">
+    </a>
+    <nav class="navbar">
+        <div class="navba__seccion">
+            <button id="btnMenu" class="btnMenuResponsy"><i class="bi bi-list"></i></button>
+            <span class="spanMenu">Menú</span>
+        </div>
+        <div id="menuEnlaces" class="navbar__seccion1">
+            <div class="enlaceNav">
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+            <div class="enlaceNav">
+                <button onclick="openAndClose('exp')" class="dropdownNavbar d-flex align-items-center gap-1 btn text-white exp">Experiencias <i class="fa-solid fa-chevron-down"></i></button>
+                <ul class="dropdownNav expList">
+                    <li><a href="guarderia.html">Guardería</a></li>
+                    <li><a href="hotel.html">Hotel</a></li>
+                    <li><a href="estetica.html">Estética</a></li>
+                </ul>
+            </div>
+            <div class="enlaceNav">
+                <a href="paquetes.html">Paquetes</a>
+            </div>
+            <div class="enlaceNav">
+                <a href="instalaciones.html">Instalaciones</a>
+            </div>
+            <div class="enlaceNav">
+                <a href="pageBuild.html">Ubicación</a>
+            </div>
+            <div class="enlaceNav">
+                <a href="pageBuild.html">Preguntas frecuentes</a>
+            </div>
+            <div class="enlaceNav">
+                <a href="pageBuild.html" class="loginNavbar f-quicksand"><i class="bi bi-person"></i> Iniciar Sesión</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+
+
+  <div class="banner__buttons">
+    <a href="../layouds/pageBuild.html" class="lateralReserva"><img class="w-100" src="../img/PESTAÑA_FLOTANTE_RESERVAR.png" alt="icono reservar"></a>
+    <a href="../layouds/pageBuild.html" class="whatsapp"><img src="../img/PESTAÑA_FLOTANTE_WHATSAPP.png" alt="icono whatsapp" class="w-100"></a>
+</div>
+
+  <!--     Body      -->
+  <section id="estetica">
+    <div class="headerEstetica f-dosis-eb">
+      <img class="esteticaPerrito" src="../img/Perrito_Bañandose_Circular.png">
+      <h1 class="letras-Colors"><span>E</span><span>s</span><span>t</span><span>é</span><span>t</span><span>i</span><span>c</span><span>a</span><img src="../img/ICONO_ESTETICA.png" width="120" alt="ICONO_ESTETICA"></h1>
+      <p class="text-black-50">¡No hay nada más lindo que ver a tu k-niño guapo con nuevo
+        look! Olvídate de las jaulas y el estrés, la estética puede ser
+        agradable para tu k-niño. Durante nuestra experiencia de estética juegan
+        en un nuestras instalaciones mientras les toca su baño, después nos ganamos su confianza, hay
+        aromaterapia y les damos masaje para que se sientan como en un spa.
+      </p>
+    </div>
+  </section>
+
+  <!--Carousel-->
+  <div id="carouselVideosHome" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="false">
+        <iframe class="w-100 d-block" src="https://www.youtube.com/embed/g6p4AYQ22qY" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="carousel-item " data-bs-interval="false">
+        <iframe class="w-100 d-block" src="https://www.youtube.com/embed/yv9mUHli8k0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="false">
+        <iframe class="w-100 d-block" src="https://www.youtube.com/embed/mu89BI_UL-g" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="false">
+        <iframe class="w-100 d-block" src="https://www.youtube.com/embed/sFbt7Icd9RI"
+          title="PERRITOS TIERNOS BEBES 🔵 VIDEOS DE RISA DE PERRITOS LINDOS Y CHISTOSOS" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="false">
+        <iframe class="w-100 d-block" src="https://www.youtube.com/embed/88fj0np8Qos"
+          title="Perrito Más Lindo Del Mundo - Perro Mas Gracioso Del Mundo | Cute Baby Animals Dogs And Cats #5"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideosHome" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselVideosHome" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+  </div>
+  <!--Tabla-->
+  <div class="tabla">
+    <table>
+      <tr>
+        <th class="f-quicksand" id="t-l">PAQUETES</th>
+        <th class="f-quicksand" id="t-r">COSTO</th>
+      </tr>
+      <tr>
+        <td class="f-dosis-eb" id="t-info-1">El baño: <font color="#616161">incluye baño con agua y
+            shampoo,masaje,corte
+            o
+            limado
+            de uñas (en caso de ser necesario), limpieza de oídos, secado,
+            cepillo y deslanado básico,perfumado y adorno opcional.</font>
+          <br> *No incluye: aseo de glándulas anales ni desenredo de nudos.
+        </td>
+        <td class="f-quicksand" id="t-costo-1">$</td>
+      </tr>
+      <tr>
+        <td class="f-dosis-eb" id="t-info-2">El baño para k-niños sin pelaje: <font color="#616161">incluye baño
+            sencillo y crema con
+            protección UV.</font>
+        </td>
+        <td class="f-quicksand" id="t-costo-2">$</td>
+      </tr>
+      <tr>
+        <td class="f-dosis-eb" id="t-info-3">Támbien tenemos corte de pelo: <font color="#616161">incluye baño
+            sencillo
+            e hidratación
+            según su tipo de pelaje, cepillado o deslanado básico, corte de pelaje estético acorde a su raza, rasurado
+            higiénico y de sus patas
+            (en caso de ser necesario).</font><br><br>
+        </td>
+        <td class="f-quicksand" id="t-costo-3">$</td>
+      </tr>
+    </table>
+  </div>
+  <img src="../img/Camino_de_Huellas.png" class="separador">
+  <!--Invitation-->
+  <section id="invitation">
+    <div class="container__invitation">
+      <div id="texs__invitation">
+        <h2 class="f-dosis-eb">Te invitamos a visitarnos en horario <br> de XX-XX, no necesitas cita.</h2>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!--Footer-->
+  <footer class="mt-5">
+    <section class=" container footerContents">
+        <article class="f-quicksand pt-5 footerContents__contenedor1">
+        <p class="m-0"><img height="18px" src="../img/k-ninn-text-footer.png" alt="logo k-ninn en negro"> creemos que el amor transforma y los k-niños son parte de nuestra familia, por eso diseñamos un espacio interactivo para que se desarrollen al máximo y, lo más importante, sean felices.</p>
+        <p>Aquí siempre serán cuidados con amor.</p>
+        </article>
+        <article class="f-quicksand footerContents__contenedor2">
+            <h3 class="f-dosis-eb">Experiencias</h3>
+            <ul class="f-quicksand">
+                <li><a href="#"><img class="iconfooterContenedor2" src="../icons/GuarderiaIndex.png" alt="icon guarderia"><span>Guardería</span></a></li> 
+                <li><a href="#"><img class="iconfooterContenedor2" src="../icons/HotelIndex.png" alt="icon hotel"><span>Hotel</span></a></li>
+                <li><a href="#"><img class="iconfooterContenedor2" src="../icons/EsteticaIndex.png" alt="icon estetica"><span>Estetica</span></a></li>
+            </ul>
+            </article>
+        <article class="f-quicksand footerContents__contenedor3">
+            <h3 class="f-quicksand">Contáctanos</h3>
+            <ul>
+                <li><img class="iconfooterContenedor2" src="../icons/TelefonoFooter.png" alt="icono de telefono"><span>33 1572 7208</span></li>
+                <li><img class="iconfooterContenedor2" src="../icons/EmailFooter.png" alt="icono de mail"><a href="mailto:contacto@k-ninn.com">contacto@k-ninn.com</a></li>
+                <li><img class="iconfooterContenedor2" src="../icons/UbicacionFooter.png" alt="icono de ubi"><a href="Ubicación">Calz.Lazaro Cardenas 3137,<br>Col Chapalita, Guadalajara,<br>Jalisco, CP 44500</a></li>
+            </ul>
+        </article>
+
+    </section>
+
+    <section>
+        <img src="../img/perritosFooter.png" class="d-block w-100" alt="perritos">
+        <div class="bg-orange ">
+            <div class="bottomFooter container">
+            <div class="bottomFooter__Redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="text-white">Aviso de privacidad</a>
+            <a href="#" class="text-white">Términos y condiciones</a>
+        </div>
+        </div>
+    </section>
+</footer>
+
+  
+  <script src="../js/menu.js"></script>
+  <script src="../js/dropdowns.js"></script>
+  </body>
+
+</html>

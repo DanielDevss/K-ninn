@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <header>
+      <a href="/" class="d-flex justify-content-center w-100">
+          <img class="w-25" src="../img/LOGOTIPO_CON_BORDE.png" alt="logotipo">
+      </a>
+      <nav class="navbar">
+          <div class="navba__seccion">
+              <button id="btnMenu" class="btnMenuResponsy"><i class="bi bi-list"></i></button>
+              <span class="spanMenu">Menú</span>
+          </div>
+          <div id="menuEnlaces" class="navbar__seccion1">
+              <div class="enlaceNav">
+                  <a href="nosotros.html">Nosotros</a>
+              </div>
+              <div class="enlaceNav">
+                  <button onclick="openAndClose('exp')" class="dropdownNavbar d-flex align-items-center gap-1 btn text-white exp">Experiencias <i class="fa-solid fa-chevron-down"></i></button>
+                  <ul class="dropdownNav expList">
+                      <li><a href="guarderia.html">Guardería</a></li>
+                      <li><a href="hotel.html">Hotel</a></li>
+                      <li><a href="estetica.html">Estética</a></li>
+                  </ul>
+              </div>
+              <div class="enlaceNav">
+                  <a href="paquetes.html">Paquetes</a>
+              </div>
+              <div class="enlaceNav">
+                  <a href="instalaciones.html">Instalaciones</a>
+              </div>
+              <div class="enlaceNav">
+                  <a href="pageBuild.html">Ubicación</a>
+              </div>
+              <div class="enlaceNav">
+                  <a href="pageBuild.html">Preguntas frecuentes</a>
+              </div>
+              <div class="enlaceNav">
+                  <a href="pageBuild.html" class="loginNavbar f-quicksand"><i class="bi bi-person"></i> Iniciar Sesión</a>
+              </div>
+          </div>
+      </nav>
+  
+  </header>
+
+    <div class="banner__buttons">
+      <a href="../layouds/pageBuild.html" class="lateralReserva"><img class="w-100" src="../img/PESTAÑA_FLOTANTE_RESERVAR.png" alt="icono reservar"></a>
+      <a href="../layouds/pageBuild.html" class="whatsapp"><img src="../img/PESTAÑA_FLOTANTE_WHATSAPP.png" alt="icono whatsapp" class="w-100"></a>
+    </div>
+    <!-- !Modificar apartir de aquí -->
+
+
+    <main class="guarderia">
+        <div>
+            <h1 class="letras-Colors f-dosis-eb"><span>G</span><span>u</span><span>a</span><span>r</span><span>d</span><span>e</span><span>r</span><span>í</span><span>a</span><img src="../icons/ICONO_GUARDERIA.png" height="180" alt="icono de guardería"></h1>
+            <p class="guarderia__texto f-dosis-eb">
+              ¡Tu k-niño debería tener días ocupados como los tuyos! Los estudios de comportamiento k-nino han demostrado que ellos aman las rutinas y las actividades para ejercitar su mente y cuerpo, por eso creamos esta divertida experiencia: con juegos sin correa, socialización y actividades de desarrollo integral. Al final del día de k-niño habrá tenido un día fabuloso.
+            </p>
+        </div>
+        <img class="guarderia__img" src="../img/guarderiaMain.png"  alt="imagen de guarderia">
+    </main>
+
+
+
+    <div class="separadorHome" style="margin-top: 4rem; margin-bottom: 4rem;"></div>
+
+
+
+    <section id="carouselVideosHome" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="false">
+
+            <iframe class="w-100 d-block"  src="https://www.youtube.com/embed/g6p4AYQ22qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item " data-bs-interval="false">
+
+            <iframe class="w-100 d-block" src="https://www.youtube.com/embed/yv9mUHli8k0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+          </div>
+          <div class="carousel-item" data-bs-interval="false">
+            <iframe class="w-100 d-block" src="https://www.youtube.com/embed/mu89BI_UL-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideosHome" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselVideosHome" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    
+    
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+    </section>
+
+
+    <div class="separadorHome" style="margin-top: 4rem; margin-bottom: 4rem;"></div>
+
+    <section class="indicaciones container f-dosis-eb">
+        <article class="indicaciones__contenido">
+            <h2>Antes de comenzar</h2>
+            <p>Cuando dejes a tu k-niño haremos una breve revisión de su salud y comportamiento para asegurar que está en óptimas condiciones. Por favor permítenos unos minutos durante su check in e infórmanos sobre cualquier condición de salud o incidentes recientes de comportaminto.</p>
+        </article>
+        <article class="indicaciones__contenido">
+            <h2 class="text-end">Tranquilidad</h2>
+            <p>Un k-niño seguro y feliz es nuestra prioridad. <br>
+              Puedes tener la tranquilidad de que será cuidado con amor mientras corre, brinca y hace k-migos en nuestras instalaciones.
+              </p>
+        </article>
+        <article class="indicaciones__contenido">
+            <h2>Un día ocupado</h2>
+            <p>Creamos la experiencia porque sabemos que la rutina es importante para el desarrollo de tu k-niño. Los juegos le permiten ejercitarse y estimular su mente, lo que e ayuda a su confianza, modales y obediencia, mientras que las actividades sensoriales lo ayudan a relajarse.</p>
+        </article>
+        <article class="indicaciones__contenido">
+            <h2 class="text-end">Areas de juego</h2>
+            <p>Nuestras áreas de juego de XXXX m2 están al aire libre y diseñadas para que k-niños de todas las edades disfruten al máximo de forma segura, y para días de lluviosos contamos con un área techada. Tenemos estrictoss protocolos de limpieza, las áreas son limpiadas y desinfectadas diariamente con productos petfriendly, además contamos con cámaras de seguridad y detectores de humo.</p>
+        </article>
+    </section>
+
+
+
+    <img style="width: 100%;" src="../img/Camino_de_Huellas.png" alt="camino de huellas">
+
+    <section class="estancias">
+        <h2 class=" estancias__titulo">Abiertos 6 días a la semana con estancias de:</h2>
+        <article class="estancias__contenedores f-dosis-eb text-center">
+            <article class="contenedor">
+                <p><span class="text-uppercase">Día completo</span><br>8am - 7pm(11 horas)</p>
+            </article>
+            <article class="contenedor">
+                <p><span class="text-uppercase">Medio día</span><br>Matutino 8am-1pm y Vespertino 2:00-7:00pm (5 horas)</p>
+            </article>
+        </article>
+        <img class="estancias__dog" src="../img/kninoHorarios.png" alt="perrito viendo de frente">
+    </section>
+
+
+    <section class="beneficios f-dosis-eb">
+
+        <img class="beneficios__icono" src="../icons/estrellas.png" width="150px" alt="icono de estrellas">
+        <h2 class="beneficios__titulo">Beneficios</h2>
+        <p class="beneficios__texto">Ser social es profundamente instintivo para los k-niños, por eso es importante la socialización y el juego en su rutina diria. Algunos de los beneficios son:</p>
+        <ul class="beneficios__lista">
+            <li>Se vuelven más seguros estando con otros humanos y k-niños.</li>
+            <li>Desarrollan sus sentidos.</li>
+            <li>Aprenden comportamientos positivos.</li>
+            <li>Retarda la difusión cognitiva.</li>
+            <li>Se mantienen en forma. La obesidad k-niña es una preocupación creciente, de acuerdo a las últimas estadísticas, más del 40% de los k-niños son obesos.</li>
+            <li>Encuentran k-migos.</li>
+        </ul>
+    </section>
+
+
+
+    <div class="separadorTexto f-dosis-eb"><span>Requisitos</span></div>
+
+
+    <section class="requisitos">
+
+        <ul class="requisitos__lista f-dosis-eb">
+            <li>Edad del k-niño mayor a 6 meses.</li>
+            <li>Carnet de vacunación vigente conforme a su edad, cargar imagen en la página web o presentarla fisicamente para verificarla.</li>
+            <li>Protección anti pulgas y garrapatas vigente (ej: collar, pastilla-pipeta).</li>
+            <li>Desparasitación interna vigente, no posterior a 6 meses.</li>
+            <li>Entregar alimento proporcional que cubra su estancia y una porción extra para sus actividades.</li>
+            <li>Portar placa de identificación.</li>
+            <li>Entregar correa.</li>
+        </ul>
+
+    </section>
+
+
+    <div class="separadorHome mt-4 mb-4"></div>
+
+
+
+
+
+
+
+
+    <!-- !Modificar hasta aquí -->
+
+
+  <!--Footer-->
+  <footer class="mt-5">
+    <section class=" container footerContents">
+        <article class="f-quicksand pt-5 footerContents__contenedor1">
+        <p class="m-0"><img height="18px" src="../img/k-ninn-text-footer.png" alt="logo k-ninn en negro"> creemos que el amor transforma y los k-niños son parte de nuestra familia, por eso diseñamos un espacio interactivo para que se desarrollen al máximo y, lo más importante, sean felices.</p>
+        <p>Aquí siempre serán cuidados con amor.</p>
+        </article>
+        <article class="f-quicksand footerContents__contenedor2">
+            <h3 class="f-dosis-eb">Experiencias</h3>
+            <ul class="f-quicksand">
+                <li><a href="#"><img class="iconfooterContenedor2" src="../icons/GuarderiaIndex.png" alt="icon guarderia"><span>Guardería</span></a></li> 
+                <li><a href="#"><img class="iconfooterContenedor2" src="../icons/HotelIndex.png" alt="icon hotel"><span>Hotel</span></a></li>
+                <li><a href="#"><img class="iconfooterContenedor2" src="../icons/EsteticaIndex.png" alt="icon estetica"><span>Estetica</span></a></li>
+            </ul>
+            </article>
+        <article class="f-quicksand footerContents__contenedor3">
+            <h3 class="f-quicksand">Contáctanos</h3>
+            <ul>
+                <li><img class="iconfooterContenedor2" src="../icons/TelefonoFooter.png" alt="icono de telefono"><span>33 1572 7208</span></li>
+                <li><img class="iconfooterContenedor2" src="../icons/EmailFooter.png" alt="icono de mail"><a href="mailto:contacto@k-ninn.com">contacto@k-ninn.com</a></li>
+                <li><img class="iconfooterContenedor2" src="../icons/UbicacionFooter.png" alt="icono de ubi"><a href="Ubicación">Calz.Lazaro Cardenas 3137,<br>Col Chapalita, Guadalajara,<br>Jalisco, CP 44500</a></li>
+            </ul>
+        </article>
+
+    </section>
+
+    <section>
+        <img src="../img/perritosFooter.png" class="d-block w-100" alt="perritos">
+        <div class="bg-orange ">
+            <div class="bottomFooter container">
+            <div class="bottomFooter__Redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="text-white">Aviso de privacidad</a>
+            <a href="#" class="text-white">Términos y condiciones</a>
+        </div>
+        </div>
+    </section>
+</footer>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/dropdowns.js"></script>
+</body>
+</html>

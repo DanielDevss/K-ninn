@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Instalaciones</title>
+
+</head>
+
+
+
+
+<header>
+    <a href="/" class="d-flex justify-content-center w-100">
+        <img class="w-25" src="../img/LOGOTIPO_CON_BORDE.png" alt="logotipo">
+    </a>
+    <nav class="navbar">
+        <div class="navba__seccion">
+            <button id="btnMenu" class="btnMenuResponsy"><i class="bi bi-list"></i></button>
+            <span class="spanMenu">Menú</span>
+        </div>
+        <div id="menuEnlaces" class="navbar__seccion1">
+            <div class="enlaceNav">
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+            <div class="enlaceNav">
+                <button onclick="openAndClose('exp')" class="dropdownNavbar d-flex align-items-center gap-1 btn text-white exp">Experiencias <i class="fa-solid fa-chevron-down"></i></button>
+                <ul class="dropdownNav expList">
+                    <li><a href="guarderia.html">Guardería</a></li>
+                    <li><a href="hotel.html">Hotel</a></li>
+                    <li><a href="estetica.html">Estética</a></li>
+                </ul>
+            </div>
+            <div class="enlaceNav">
+                <a href="paquetes.html">Paquetes</a>
+            </div>
+            <div class="enlaceNav">
+                <a href="instalaciones.html">Instalaciones</a>
+            </div>
+            <div class="enlaceNav">
+                <a href="pageBuild.html">Ubicación</a>
+            </div>
+            <div class="enlaceNav">
+                <a href="pageBuild.html">Preguntas frecuentes</a>
+            </div>
+            <div class="enlaceNav">
+                <a href="pageBuild.html" class="loginNavbar f-quicksand"><i class="bi bi-person"></i> Iniciar Sesión</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<div class="banner__buttons">
+    <a href="../layouds/pageBuild.html" class="lateralReserva"><img class="w-100" src="../img/PESTAÑA_FLOTANTE_RESERVAR.png" alt="icono reservar"></a>
+    <a href="../layouds/pageBuild.html" class="whatsapp"><img src="../img/PESTAÑA_FLOTANTE_WHATSAPP.png" alt="icono whatsapp" class="w-100"></a>
+</div>
+    <!-- !MODIFICAR AQUÍ -->
+    
+    <header class="instalacionesHeader">
+        <h1 class=" letras-Colors p-5 f-dosis-eb"><span>I</span><span>n</span><span>s</span><span>t</span><span>a</span><span>l</span><span>a</span><span>c</span><span>i</span><span>o</span><span>n</span><span>e</span><span>s</span></h1>
+    </header>
+
+    <div class="separadorHome mb-5"></div>
+
+
+
+    <!-- CARRUCEL -->
+
+    <div id="carouselVideosHome" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            
+            
+            <div class="carousel-item active" data-bs-interval="false">
+                <iframe class="w-100 d-block"  src="https://www.youtube.com/embed/g6p4AYQ22qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="false">
+                <iframe class="w-100 d-block" src="https://www.youtube.com/embed/yv9mUHli8k0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="false">
+                <iframe class="w-100 d-block" src="https://www.youtube.com/embed/mu89BI_UL-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideosHome" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselVideosHome" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+    
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselVideosHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- CARRUCEL FIN -->
+
+    <!--LINK Areas de juegos-->
+    
+    <div class="separadorHome" style="margin-top: 5rem;"></div>
+    
+    <section class="container instalaciones">
+        <h2 class="title f-quicksand text-uppercase">Áreas de juegos</h2>
+        <p class="texto f-dosis-b">Están al aire libre y fue diseñada especialmente para los k-niñ@s con césped natural, un arenero, alberca en épocas de calor y área techada.</p>
+        
+
+        <section id="slidePhotosJuegos" class="carousel slide carousel-photos" data-bs-ride="carousel">
+
+
+            <section class="carousel-inner">
+
+                
+                <article class="carousel-item active" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/AREAS DE JUEGOS_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/AREAS DE JUEGOS_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/AREAS DE JUEGOS_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+
+                    </div>
+
+                </article>
+                <article class="carousel-item" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/AREAS DE JUEGOS_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/AREAS DE JUEGOS_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/AREAS DE JUEGOS_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+
+                    </div>
+
+                </article>
+                <article class="carousel-item" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/AREAS DE JUEGOS_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/AREAS DE JUEGOS_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/AREAS DE JUEGOS_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+
+                    </div>
+
+                </article>
+
+                
+            </section>
+
+            <!--buttons-->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#slidePhotosJuegos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slidePhotosJuegos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+
+            <!--Indicadores-->
+
+            <article class="carousel-indicators">
+                <button type="button" data-bs-target="#slidePhotosJuegos" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slidePhotosJuegos" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slidePhotosJuegos" data-bs-slide-to="2"></button>
+            </article>
+        </section>
+
+
+
+    </section>
+    
+    
+    
+    <!--LINK Habitaciones-->
+    
+    <div class="separadorHome" style="margin-top: 5rem;"></div>
+    
+    <section class="container instalaciones">
+        <h2 class="title f-quicksand text-uppercase text-end">Habitaciones</h2>
+        <p class="texto f-dosis-b">¡Somos libre de jaulas! Contamos con 15 habitaciones equipadas con cama, bebedero y comedero para k-niñ@s de talla chica y mediana.</p>
+
+
+        <section id="slidePhotosHabitaciones" class="carousel slide carousel-photos" data-bs-ride="carousel">
+
+
+            <section class="carousel-inner">
+
+                
+                <article class="carousel-item active" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/HABITACIONES_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/HABITACIONES_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/HABITACIONES_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+                <article class="carousel-item" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/HABITACIONES_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/HABITACIONES_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/HABITACIONES_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+                <article class="carousel-item" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/HABITACIONES_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/HABITACIONES_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/HABITACIONES_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+
+                
+            </section>
+
+            <!--buttons-->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#slidePhotosHabitaciones" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slidePhotosHabitaciones" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+
+            <!--Indicadores-->
+
+            <article class="carousel-indicators">
+                <button type="button" data-bs-target="#slidePhotosHabitaciones" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slidePhotosHabitaciones" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slidePhotosHabitaciones" data-bs-slide-to="2"></button>
+            </article>
+        </section>
+        
+    </section>
+    
+    <!--LINK Estetica-->
+    
+    <div class="separadorHome" style="margin-top: 5rem;"></div>
+    
+    <section class="container instalaciones">
+        <h2 class="title f-quicksand text-uppercase">Éstetica</h2>
+        <p class="texto f-dosis-b">¡Te enseñamos todo! Es un área abierta con tinas especiales, secadoras de bajo ruido, aromaterapia y un área de juegos interior libre de jaulas para cuando ya están guapos.</p>
+
+
+
+        <section id="slidePhotosEstetica" class="carousel slide carousel-photos" data-bs-ride="carousel">
+
+
+            <section class="carousel-inner">
+
+                
+                <article class="carousel-item active" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/ESTETICA_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTETICA_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTETICA_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+                <article class="carousel-item" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/ESTETICA_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTETICA_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTETICA_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+                <article class="carousel-item" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/ESTETICA_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTETICA_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTETICA_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+
+                
+            </section>
+
+            <!--buttons-->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#slidePhotosEstetica" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slidePhotosEstetica" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+
+            <!--Indicadores-->
+
+            <article class="carousel-indicators">
+                <button type="button" data-bs-target="#slidePhotosEstetica" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slidePhotosEstetica" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slidePhotosEstetica" data-bs-slide-to="2"></button>
+            </article>
+        </section>
+        
+    </section>
+    
+    <!--LINK Showroom-->
+    
+    <div class="separadorHome" style="margin-top: 5rem;"></div>
+    
+    <section class="container instalaciones">
+        <h2 class="title f-quicksand text-uppercase text-end">Showroom</h2>
+        <p class="texto f-dosis-b">Tenemos los productos mexicanos mas cool para tu k-niñ@, puedes encontrar </p>
+
+        <ul class="f-dosis-eb texto instalaciones__list">
+            <li>Correas resistentes y coloridas; marca Tail Society</li>
+            <li>Chalecos de mezclilla; marca Lucky Dog</li>
+            <li>Premios naturales; marca</li>
+            <li>Paletas heladas de zanahoria, plátano, hígado y pollo; marca El perro helado</li>
+        </ul>
+
+
+        <section id="slidePhotosShowroom" class="carousel slide carousel-photos" data-bs-ride="carousel">
+
+
+            <section class="carousel-inner">
+
+                
+                <article class="carousel-item active" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/SHOWROOM_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/SHOWROOM_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/SHOWROOM_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+
+                
+                <article class="carousel-item" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/SHOWROOM_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/SHOWROOM_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/SHOWROOM_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+
+                
+                <article class="carousel-item" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/SHOWROOM_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/SHOWROOM_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/SHOWROOM_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+                
+                
+
+                
+            </section>
+
+            <!--buttons-->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#slidePhotosShowroom" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slidePhotosShowroom" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+
+            <!--Indicadores-->
+
+            <article class="carousel-indicators">
+                <button type="button" data-bs-target="#slidePhotosShowroom" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slidePhotosShowroom" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slidePhotosShowroom" data-bs-slide-to="2"></button>
+            </article>
+        </section>
+
+
+    </section>
+    
+
+    <!--LINK Estacionamiento-->
+
+    <div class="separadorHome" style="margin-top: 5rem;"></div>
+    
+    <section class="container instalaciones">
+        <h2 class="title f-quicksand text-uppercase">Estacionamiento</h2>
+        <p class="texto f-dosis-b">Contamos con amplio estacionamiento interior para 5 autos.</p>
+        
+        <section id="slidePhotosParking" class="carousel slide carousel-photos" data-bs-ride="carousel">
+
+
+            <section class="carousel-inner">
+
+                
+                <article class="carousel-item active" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/ESTACIONAMIENTO_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTACIONAMIENTO_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTACIONAMIENTO_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+
+                
+                <article class="carousel-item" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/ESTACIONAMIENTO_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTACIONAMIENTO_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTACIONAMIENTO_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+
+                
+                <article class="carousel-item" data-bs-interval="false">
+                    <div class="item__container">
+                        <img src="../img/instalaciones/ESTACIONAMIENTO_1.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTACIONAMIENTO_2.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                        <img src="../img/instalaciones/ESTACIONAMIENTO_3.png" class="carousel__img d-block m-auto" alt="imagen carousel">
+                    </div>
+
+                </article>
+
+                
+            </section>
+
+            <!--buttons-->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#slidePhotosParking" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slidePhotosParking" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+
+            <!--Indicadores-->
+
+            <article class="carousel-indicators">
+                <button type="button" data-bs-target="#slidePhotosParking" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slidePhotosParking" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slidePhotosParking" data-bs-slide-to="2"></button>
+            </article>
+        </section>
+    </section>
+
+
+
+    <!--LINK Seguridad-->
+
+    <div class="separadorHome" style="margin-top: 5rem;"></div>
+    
+    <section class="seguridad">
+        <h2 class="title f-quicksand text-uppercase text-center text-uppercase">Seguridad e Higiene</h2>
+
+        <article>
+            <p class="texto f-dosis-b">Tenemos estrictos protocolos de seguridad, doble reja en área de juegos, puerta con pasador en habitaciones, cámaras de seguridad en todas las instalaciones y detectores de humo. Todas las áreas son limpiadas y desinfectadas diariamente con productos petfriendly, las camas son lavadas al final de cada estancia.</p>
+            
+            <img class="seguridad__bg" src="../img/instalaciones/SEGURIDAD E HIGIENE.png" alt="Patita de perrito">
+        </article>
+    </section>
+
+
+    <div style="height: 3rem;"></div>
+    <div class="separadorHome"></div>
+    <div style="height: 3rem;"></div>
+
+
+    <!-- !MODIFICAR HASTA AQUÍ -->
+
+
+    <footer class="mt-5">
+        <section class=" container footerContents">
+            <article class="f-quicksand pt-5 footerContents__contenedor1">
+            <p class="m-0"><img height="18px" src="../img/k-ninn-text-footer.png" alt="logo k-ninn en negro"> creemos que el amor transforma y los k-niños son parte de nuestra familia, por eso diseñamos un espacio interactivo para que se desarrollen al máximo y, lo más importante, sean felices.</p>
+            <p>Aquí siempre serán cuidados con amor.</p>
+            </article>
+            <article class="f-quicksand footerContents__contenedor2">
+                <h3 class="f-dosis-eb">Experiencias</h3>
+                <ul class="f-quicksand">
+                    <li><a href="#"><img class="iconfooterContenedor2" src="../icons/GuarderiaIndex.png" alt="icon guarderia"><span>Guardería</span></a></li> 
+                    <li><a href="#"><img class="iconfooterContenedor2" src="../icons/HotelIndex.png" alt="icon hotel"><span>Hotel</span></a></li>
+                    <li><a href="#"><img class="iconfooterContenedor2" src="../icons/EsteticaIndex.png" alt="icon estetica"><span>Estetica</span></a></li>
+                </ul>
+                </article>
+            <article class="f-quicksand footerContents__contenedor3">
+                <h3 class="f-quicksand">Contáctanos</h3>
+                <ul>
+                    <li><img class="iconfooterContenedor2" src="../icons/TelefonoFooter.png" alt="icono de telefono"><span>33 1572 7208</span></li>
+                    <li><img class="iconfooterContenedor2" src="../icons/EmailFooter.png" alt="icono de mail"><a href="mailto:contacto@k-ninn.com">contacto@k-ninn.com</a></li>
+                    <li><img class="iconfooterContenedor2" src="../icons/UbicacionFooter.png" alt="icono de ubi"><a href="Ubicación">Calz.Lazaro Cardenas 3137,<br>Col Chapalita, Guadalajara,<br>Jalisco, CP 44500</a></li>
+                </ul>
+            </article>
+
+        </section>
+
+        <section>
+            <img src="../img/perritosFooter.png" class="d-block w-100" alt="perritos">
+            <div class="bg-orange ">
+                <div class="bottomFooter container">
+                <div class="bottomFooter__Redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="#" class="text-white">Aviso de privacidad</a>
+                <a href="#" class="text-white">Términos y condiciones</a>
+            </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/dropdowns.js"></script>
+</body>
+</html>

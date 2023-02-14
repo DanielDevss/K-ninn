@@ -62,6 +62,30 @@
     color: white;
 }
 
+.separadorText{
+    margin: 3rem auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorOrange);
+}
+.separadorText::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    z-index: -1;
+    background-color: var(--colorBlue);
+    opacity: .5;
+    
+}
+.separadorText h2{
+    background-color: #FFF8F2;
+    font-size: 4rem !important;
+}
+
 * , * *{
     box-sizing: border-box;
     padding: 0;
@@ -73,6 +97,7 @@ body{
 a{
     text-decoration: none;
 }
+
 /* TODO navbar */
 .navbar{
     width: 100%;
@@ -2166,3 +2191,83 @@ td {
     stroke: white;
 }
 
+
+/* ANCHOR ADOPCION
+#######################################################################################################################
+*/
+.adopcion__header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -1rem;
+}
+.adopcion__imgText{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    display: block;
+    height: 120px;
+}
+@media(min-width:1100px){
+    .adopcion__imgText{
+        height: 200px;
+    }
+}
+.adopcion__imgBanner{
+    display: block;
+    width: 100%;
+}
+.requisitosAdopcion__list{
+    display: block;
+    margin: 5rem auto;
+    width: 80%;
+    max-width: 500px;
+    list-style: none;
+    padding-left: 0;
+}
+.requisitosAdopcion__requisito{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    padding-bottom: .5rem;
+}
+.requisitosAdopcion__requisito:last-child{
+    padding-bottom: 0;
+}
+.requisitosAdopcion__requisito::before{
+    content: '';
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-image: url(../img/adopcion/PATITA_AZUL.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*
+    ? disponibles
+*/
+.disponibles{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.disponibles__header{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+#slidePhotosKninos .carousel-inner .carousel-item img{
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+#slidePhotosKninos .carousel-inner .carousel-item img:hover{
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
